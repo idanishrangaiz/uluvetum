@@ -581,6 +581,16 @@ h2.about-me-h::after {
   bottom: 0;
   /* left: calc(50% - 25px); */
 }
+.section-title h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 3px;
+  background: #34b7a7;
+  bottom: 0;
+  /* left: calc(50% - 25px); */
+}
 
 .section-title p {
   margin-bottom: 0;
