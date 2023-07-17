@@ -584,9 +584,157 @@ REFERENCES `COURSES` (`CourseName`);
         <!-- Normalisation END--> <!-- Normalisation END--> <!-- Normalisation END--> <!-- Normalisation END-->
 
 
+<!-- API Security Requirements  START--> <!-- API Security Requirements  START--> <!-- API Security  START-->
+
+          <div class="section-title">
+
+      <h2>API Security Requirements Exercise:</h2>
+      <p>
+        Trading activities use APIs to access financial information for decision-making and to generate trading strategies. For this purpose, an evaluation of the security requirements of the Premium Yahoo Finance API (PYF) has been proposed. The tool enables data sharing, scraping, and connectivity with Python programs to gather real-time financial instrument data, which is used extensively for trading (Lee and Lee, 2023). For this exercise, the author has prepared a brief security requirements specification to mitigate risks associated with the API related to PYF in line with principles proposed by Siriwardena (2014). 
+      </p>
+      <br>
+      
+      <p>
+        1.	Authentication and Authorisation:
+        <ul>
+          <li>
+            The PYF API should require secure authentication mechanisms, such as API keys or OAuth, to verify the identity of users accessing the API.
+          </li>
+          <li>
+            Access to sensitive financial data or advanced features should be granted based on user authorisation levels.
+          </li>
+        </ul>
+          </p>
+      <br>
+      
+      
+      <p>
+        2. Secure Communication:
+        <ul>
+          <li>
+            All data transmitted between the Python program and the YPYF
+                    </li>
+          <li>
+            API should be encrypted using secure protocols like HTTPS to ensure confidentiality and integrity.
+          </li>
+          <li>
+            The API should employ secure socket layer (SSL) certificates to validate the authenticity of the Yahoo Finance server and establish a secure connection.
+                </li>
+        </ul>
+          </p>
+      <br>
 
 
+      <p>
+        3.	Input Validation and Data Sanitisation:
+                <ul>
+          <li>
+            The API should validate and sanitise all user input to prevent common security vulnerabilities, such as injection attacks (e.g., SQL injection or code injection).
+                              </li>
+          <li>
+            User-supplied data should be properly encoded, escaped, or parameterised to prevent data manipulation or unauthorised access to sensitive information.
+                    </li>
+        </ul>
+          </p>
+      <br>
 
+
+      <p>
+        4. Access Control and Data Privacy:
+                <ul>
+          <li>
+            The PYF API should enforce proper access controls to limit access to authorised users and prevent unauthorised data retrieval or modification.
+            </li>
+          <li>
+            Personally identifiable information and sensitive financial data should be protected by implementing appropriate data masking, encryption, or anonymisation techniques.
+           </li>
+
+           <li>
+            Compliance with relevant data protection regulations, such as GDPR or financial industry standards, should be ensured when handling personal or financial data.
+          </li>
+        </ul>
+          </p>
+      <br>  
+
+
+      <p>
+        5. Logging and Monitoring:
+                <ul>
+          <li>
+            For auditing and troubleshooting purposes, the API should maintain comprehensive logs of all API activities, including user actions, errors, and access attempts.
+          </li>
+          <li>
+            Real-time monitoring mechanisms should be in place to detect and respond to any security incidents, such as abnormal API usage patterns or unauthorised access attempts.
+             </li>
+
+        </ul>
+          </p>
+      <br> 
+
+
+      
+      <p>
+        6. Regular Security Assessments:
+           <ul>
+          <li>
+            Periodic security assessments, including vulnerability scanning and penetration testing, should be conducted to identify and address any potential security weaknesses in the Yahoo Finance API.
+
+          </li>
+          <li>
+            The API should stay updated with Yahoo's latest security patches and updates to mitigate known vulnerabilities.
+          </li>
+        </ul>
+          </p>
+      <br> 
+
+      <p>
+        Adhering to these security requirements aims to mitigate risks associated with the Yahoo Finance API, ensuring the confidentiality, integrity, and availability of financial data accessed, shared, and analysed through Python programs.
+
+      </p>
+      <br>
+
+      
+      </div>
+
+
+      <div class="section-title">
+
+        <h2>References:</h2>
+        <p>
+          Lee, J., & Lee, C. F. (2023). Data Collection, Presentation, and Yahoo! Finance. In Essentials of Excel VBA, Python, and R: Volume I: Financial Statistics and Portfolio Analysis (pp. 19-80). Cham: Springer International Publishing.
+           </p>
+        <br>
+        
+        <p>
+          Siriwardena, P. (2014). Advanced API Security. Apress: New York, NY, USA.
+           </p>
+        <br><br>
+        
+        </div>
+
+
+<!-- API Security Requirements  END--> <!-- API Security Requirements  END--> <!-- API Security  END-->
+
+
+<!-- Data Sources  START--><!-- Data Sources  START--><!-- Data Sources  START--><!-- Data Sources  START-->
+
+      <div class="section-title">
+
+        <h2>References:</h2>
+        <p>
+          Lee, J., & Lee, C. F. (2023). Data Collection, Presentation, and Yahoo! Finance. In Essentials of Excel VBA, Python, and R: Volume I: Financial Statistics and Portfolio Analysis (pp. 19-80). Cham: Springer International Publishing.
+           </p>
+        <br>
+        
+        <p>
+          Siriwardena, P. (2014). Advanced API Security. Apress: New York, NY, USA.
+           </p>
+        <br><br>
+        
+        </div>
+
+
+<!-- Data Sources END--> <!-- Data Sources END--> <!-- Data Sources END--> <!-- Data Sources END-->
 
 
 <!-- ARTIFACTS END--> <!-- ARTIFACTS END--> <!-- ARTIFACTS END--> <!-- ARTIFACTS END-->
