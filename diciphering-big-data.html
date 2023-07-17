@@ -720,18 +720,68 @@ REFERENCES `COURSES` (`CourseName`);
 
       <div class="section-title">
 
-        <h2>References:</h2>
+        <h2>Data Sources and applied wrangling examples in real life (unit 2/3/4):</h2>
         <p>
-          Lee, J., & Lee, C. F. (2023). Data Collection, Presentation, and Yahoo! Finance. In Essentials of Excel VBA, Python, and R: Volume I: Financial Statistics and Portfolio Analysis (pp. 19-80). Cham: Springer International Publishing.
-           </p>
-        <br>
-        
-        <p>
-          Siriwardena, P. (2014). Advanced API Security. Apress: New York, NY, USA.
-           </p>
+          The core book provided (Kazil and Jarmul, 2016) was slightly outdated and lacked core elements such as panda; therefore, I decided to engage in real-life data wrangling and data sources exercises that could aid my investment skills. My aim was to gather stock data and trends around dividend stocks from google trends and create a signal that could be used for alfa generation. In this instance, the provided code collects and analyses data from Google Trends using Python. It retrieves search interest data for the terms 'Tesla' and 'Apple' over the last  month, performs data wrangling by removing unnecessary columns, and then calculates the average, maximum, and minimum interest for each term. Final results are displayed and saved to a CSV file for further potential analysis. The code uses Python to demonstrate how to gather and analyse search interest data from Google Trends.
+          </p>
         <br><br>
+          
         
         </div>
+
+
+        <div class="section-title">
+
+          <h2>Code:</h2>
+          <p class="img-cls">
+            <img src="assets/img/pic6.png" alt="table 6">
+          </p>
+          <br><br>
+          
+          </div>
+
+
+          <div class="section-title">
+
+            <h2>Result:</h2>
+            <p>
+              <pre>
+                Average interest in 'Tesla shares': 42.407407407407405
+                Maximum interest in 'Tesla shares': 69
+                Minimum interest in 'Tesla shares': 14
+
+                Average interest in 'Apple shares': 35.333333333333336
+                Maximum interest in 'Apple shares': 51
+                Minimum interest in 'Apple shares': 20
+
+                Average interest in 'NVDA shares': 2.888888888888889
+                Maximum interest in 'NVDA shares': 11
+                Minimum interest in 'NVDA shares': 0
+
+                Average interest in 'dividend shares': 73.33333333333333
+                Maximum interest in 'dividend shares': 100
+                Minimum interest in 'dividend shares': 42
+
+              </pre>
+            </p><br>
+            
+            <p>
+              In this instance we could clearly see how interest has changed or increased for the relevant search terms.
+            </p>
+            <br><br>
+            
+            </div>
+
+            <div class="section-title">
+
+              <h2>Reference:</h2>
+              <p>
+                Kazil, J, & Jarmul, K 2016, Data Wrangling with Python : Tips and Tools to Make Your Life Easier, O'Reilly Media, Incorporated, Sebastopol. Available from: ProQuest Ebook Central. [17 July 2023].
+              </p>
+              <br><br>
+                
+              
+              </div>
 
 
 <!-- Data Sources END--> <!-- Data Sources END--> <!-- Data Sources END--> <!-- Data Sources END-->
