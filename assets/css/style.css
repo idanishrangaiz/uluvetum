@@ -1420,4 +1420,14 @@ h2.about-me-h::after {
     margin: 0 auto;
     display: block;
 }
+.data-professional-page .section-title h3::after {
+  content: "";
+  display: none;
+  
+}
+.deciphering-page .section-title h3::after {
+  content: "";
+  display: none;
+  
+}
 
