@@ -444,13 +444,139 @@
 
 <div class="section-title" id="artefacts">
 
-  <h2>Artefacts </h2>
+  <h2 class="about-me-h" style="text-align: center; padding-top: 70px;">Artefacts </h2>
+  <h2>Normalisation Exercise: </h2>
   <p>
-    <!-- put your content here -->
+    The exercise aims to transform a provided Excel spreadsheet into the third normal form through normalisation. Normalisation establishes relations that effectively fulfil an organisation's data needs (Beeri et al., 1989 ). Connolly and Begg (2014) argue that these relations possess three key characteristics that enhance the efficiency of managing and storing a database:
+  </p><br>
+  <p>
+    <ul>
+      <li>
+        1.	The relations are designed with a minimal number of attributes.
+      </li>
+      <li>
+        2.	Logically related attributes are appropriately grouped in the database.
+      </li>
+      <li>
+        3.	Efforts are made to minimise redundancy in the database structure.
+      </li>
+    </ul>
+  </p><br>
+  <p>
+    The normalisation is shown on the screenshots below and the sql code has been derived via sql workbench.
   </p>
-  <br><br><br>
+
+  <br><br>
 </div>
 
+<div class="section-title">
+
+  <h2>Initial Format:</h2>
+  <p>
+    <img src="assets/img/pic1.png" alt="table 1" width="100%" height="auto">
+  </p>
+  <br>
+
+  <h2>First Normalisation:</h2>
+  <p>
+    <img src="assets/img/pic2.png" alt="table 2" width="100%" height="auto">
+  </p>
+  <br>
+
+  <h2>Second Normalisation:</h2>
+  <h3>Table 1:</h3>
+  <p>
+    <img src="assets/img/pic3.png" alt="table 3" width="100%" height="auto">
+  </p>
+  <br>
+
+  <h3>Table 2:</h3>
+  <p>
+    <img src="assets/img/pic4.png" alt="table 4" width="100%" height="auto">
+  </p>
+  <br>
+
+  <h3>Table 3:</h3>
+  <p>
+    <img src="assets/img/pic5.png" alt="table 5" width="100%" height="auto">
+  </p>
+  <br><br>
+  
+  </div>
+
+
+  <div class="section-title">
+
+    <h2>Third Normalisation:</h2>
+    <p>
+      The tables provided do not exhibit any transitive dependencies, indicating that they are already in the third normal form. Therefore, the task of normalizing the data to the third normal form is complete.
+    </p>
+    <br><br>
+    
+    </div>
+
+
+    <div class="section-title">
+
+      <h2>SQL Code::</h2>
+      <p>
+      <pre>
+
+        CREATE TABLE `STUDENTS` (
+    `StudentNumber` INT  NOT NULL ,
+    `StudentName` VARCHAR(50)  NOT NULL ,
+    `ExamScore` INT  NOT NULL ,
+    `Support` BOOL  NOT NULL ,
+    `Birthday` DATE  NOT NULL ,
+    PRIMARY KEY (
+        `StudentNumber`
+    )
+);
+
+CREATE TABLE `COURSES` (
+    `CourseName` VARCHAR(30)  NOT NULL ,
+    `TeacherName` VARCHAR(50)  NOT NULL ,
+    `ExamBoards` VARCHAR(10)  NOT NULL ,
+    PRIMARY KEY (
+        `CourseName`
+    )
+);
+
+CREATE TABLE `ENROLLMENTS` (
+    `StudentNumber` INT  NOT NULL ,
+    `CourseName` VARCHAR(30)  NOT NULL ,
+    PRIMARY KEY (
+        `StudentNumber`,`CourseName`
+    )
+);
+
+ALTER TABLE `ENROLLMENTS` ADD CONSTRAINT `fk_ENROLLMENTS_StudentNumber` FOREIGN KEY(`StudentNumber`)
+REFERENCES `STUDENTS` (`StudentNumber`);
+
+ALTER TABLE `ENROLLMENTS` ADD CONSTRAINT `fk_ENROLLMENTS_CourseName` FOREIGN KEY(`CourseName`)
+REFERENCES `COURSES` (`CourseName`);
+
+
+      </pre></p>
+      <br><br>
+      
+      </div>
+
+
+      <div class="section-title">
+
+        <h2>References:</h2>
+        <p>
+          Beeri, C., Bernstein, P. A., & Goodman, N. (1989). A sophisticate's introduction to database normalisation theory. In Readings in artificial intelligence and databases (pp. 468-479). Morgan Kaufmann.
+                </p>
+        <br>
+        
+        <p>
+          Connolly, T., Begg, C. (2014) Database Systems. A Practical Approach to Design, Implementation, and Management. 6th ed. Harlow: Pearson Education Limited.
+                        </p>
+        <br><br>
+        
+        </div>
 <!-- ARTIFACTS END--> <!-- ARTIFACTS END--> <!-- ARTIFACTS END--> <!-- ARTIFACTS END-->
 
 
