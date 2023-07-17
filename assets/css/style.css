@@ -1416,3 +1416,8 @@ h2.about-me-h::after {
   }
 } */
 
+.img-cls img {
+    margin: 0 auto;
+    display: block;
+}
+
