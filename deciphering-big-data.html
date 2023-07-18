@@ -784,7 +784,111 @@ REFERENCES `COURSES` (`CourseName`);
 
 <!-- Data Sources END--> <!-- Data Sources END--> <!-- Data Sources END--> <!-- Data Sources END-->
 
+<!-- Data wrangling  START--> <!-- Data wrangling  START--><!-- Data wrangling  START-->
 
+<div class="section-title">
+
+  <h2> Data Wrangling:</h2>
+  <p>
+    Data wrangling is crucial in the Data Science Process between data acquisition and exploratory data analysis (EDA). It encompasses a set of tasks performed to understand and prepare data for machine learning purposes. It is widely recognised that data wrangling can consume a significant portion of a data scientist's project time, sometimes between 50% to 80%, as argued by Watson et al. (2017)
+  </p>
+  <br>
+  
+  <p>
+    While some may perceive data wrangling as routine custodial work, its proper execution plays a pivotal role in extracting accurate insights from valuable enterprise data assets. In addition, the significance of proficient data wrangling skills lies in integrating information from multiple data sources, addressing common transformation challenges, and resolving data cleansing and quality issues. 
+    </p>
+  <br>
+  <p>
+    A skilled data wrangler possesses an intimate understanding of the data and constantly seeks opportunities to enrich it. Flawless data is a rarity in real-world scenarios, especially when dealing with rapidly evolving technologies such as social media and the Internet of Things. Consequently, a data wrangler must deeply understand the business context to interpret, clean, and transform the data into a suitable format. Although it may sound simple, the reality can be frustratingly complex.
+      </p>
+  <br>
+  <p>
+    The data science process can only progress meaningfully with solid data-wrangling skills, and data scientists who neglect the importance of data wrangling may find themselves missing to understand or misinterpret their datasets. While data wrangling requires significant time and effort, its benefits are invaluable (Science, 2018).
+      </p>
+  <br>
+  
+  <p>
+    As the exercise book did not provide pandas' capabilities, the author has decided to rewrite the code using more up-to-date libraries than those supplied in the core book. 
+        </p>
+  <br>
+  <br>
+  </div>
+
+
+
+  <div class="section-title">
+
+    <h2>Section 1 - Fetching data from URLs and creating dataframes:</h2>
+    <p>
+      This section is responsible for sending GET requests to the URLs provided, decoding the responses, and converting them into dataframes. 
+        </p>
+    <br>
+    <p class="img-cls">
+      <img src="assets/img/pic7.png" alt="table 7">
+    </p>
+    <br>
+
+    <h2>Section 2 - Extracting headers and replacing them in the data dataframe:</h2>
+    <p>
+      This section extracts the headers from data and header dataframes, checks which headers exist in the data dataframe but not in the header dataframe, and then replaces the headers in the data dataframe using labels for matching names.
+        </p>
+    <br>
+    <p class="img-cls">
+      <img src="assets/img/pic8.png" alt="table 8">
+    </p>
+    <br>
+
+
+    <h2>Section 3 - Handling Null Values, Renaming Columns, Identifying Unique Values and Duplicates:</h2>
+    <p>
+      This section is responsible for renaming the columns to something more understandable, handling null values, identifying the categorical and numeric columns, finding the unique values for each categorical column, and finding the duplicate rows in the dataframe.        
+    </p>
+    <br>
+    <p class="img-cls">
+      <img src="assets/img/pic9.png" alt="table 9">
+    </p>
+    <br>
+
+
+    <h2>Section 4 - Handling Date and Time Data:</h2>
+    <p>
+      In this section, the data related to date and time is handled. First, any null values in the 'Start of the interview - Hour' column are filled with 0. Then, an attempt is made to convert the column to datetime format. Any problems with this conversion are caught and printed. Finally, the 'Start of interview', 'End of interview', and 'Duration of interview' columns are created, and the first ten values of these new columns are printed.
+            </p>
+    <br>
+    <p class="img-cls">
+      <img src="assets/img/pic10.png" alt="table 10">
+    </p>
+    <br>
+    <p>The results are as follows:</p>
+    <br>
+    <p class="img-cls">
+      <img src="assets/img/pic11.png" alt="table 11">
+    </p>
+    <br>
+    <br>
+    
+    </div>
+
+
+<!-- REFERENCES -->
+     <div class="section-title">
+
+      <h2>Reference:</h2>
+      <p>
+        Science, ODSC. (2018). Top Data Wrangling Skills Required for Data Scientists. [online] Medium. Available at: https://odsc.medium.com/top-data-wrangling-skills-required-for-data-scientists-8a6b7dc604a7 [Accessed 18 Jul. 2023].
+            </p>
+      <br>
+      <p>
+        Watson, A., Babu, D.S.V. and Ray, S., 2017, December. Sanzu: A data science benchmark. In 2017 IEEE International Conference on Big Data (Big Data) (pp. 263-272). IEEE.
+                  </p>
+      <br>
+      <br>
+        
+      
+      </div>
+
+<!-- Data wrangling   END--> <!-- Data wrangling  END--><!-- Data wrangling   END-->
+ 
 <!-- ARTIFACTS END--> <!-- ARTIFACTS END--> <!-- ARTIFACTS END--> <!-- ARTIFACTS END-->
 
 
