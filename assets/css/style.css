@@ -1430,4 +1430,7 @@ h2.about-me-h::after {
   display: none;
   
 }
+.img-cls-d img{
+  width: 100%;
+}
 
