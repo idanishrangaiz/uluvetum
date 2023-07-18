@@ -1431,6 +1431,8 @@ h2.about-me-h::after {
   
 }
 .img-cls-d img{
-  width: 100%;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
