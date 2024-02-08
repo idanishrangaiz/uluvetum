@@ -1435,4 +1435,24 @@ h2.about-me-h::after {
   display: block;
   margin: 0 auto;
 }
+.download-btn-cls {
+  text-align: center;
+}
 
+.download-btn-cls a {
+  font-size: 18px !important;
+  border: 1px solid #34b7a7;
+  padding: 10px 12px;
+  background:#34b7a7;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.download-btn-cls a:hover {
+  font-size: 18px !important;
+  border: 1px solid #040b14;
+  padding: 10px 12px;
+  background: #040b14;
+  border-radius: 4px;
+  color: #fff;
+}
